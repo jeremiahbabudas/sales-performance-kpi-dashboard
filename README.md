@@ -63,27 +63,18 @@ This dashboard project was built to:
 
 
 - Target Status = IF([Variance] > 0, 1, -1)
-
 - Total Sales Actual = SUM(Actual[Sales])
-
 - Total Sales Target = SUM(Targets[Sales])
-
 - Variance = [Total Sales Actual] - [Total Sales Target]
-
 - Variance % = DIVIDE([Variance], [Total Sales Target])
-
 - Variance Label = 
      VAR up = "✅"
      VAR down = "❌"
      VAR formatted_var_pct = FORMAT(ABS([Variance %]), "0.0%")
      RETURN formatted_var_pct & " " & IF([Variance %] > 0, up, down)
-
 - YTD Sales Actual = CALCULATE([Total Sales Actual], DATESYTD('Calendar'[Date]))
-
 - YTD Sales Target = CALCULATE([Total Sales Target], DATESYTD('Calendar'[Date]))
-
 - YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
-
 - YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
 
 
