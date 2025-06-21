@@ -16,12 +16,12 @@ This project is a **Sales KPI Dashboard** built in **Power BI**, designed to mon
 
 - **Visualizations**:
   - Clustered Column Chart for Actual vs Target
+  - **Team Slicer**: Allows filtering the dashboard by one of four sales teams to view team-specific performance
   - Employee-wise performance table with:
     - Actual
     - Target
     - Variance %
     - Trendline (Sparkline)
-  - **Team Slicer**: Allows filtering the dashboard by one of four sales teams to view team-specific performance
 
 ---
 
