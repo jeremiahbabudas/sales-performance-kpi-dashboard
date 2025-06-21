@@ -2,7 +2,6 @@
 
 This project is a **Sales KPI Dashboard** built in **Power BI**, designed to monitor performance against sales targets using dynamic visuals and calculated metrics. The dashboard presents both high-level and detailed views of key indicators such as actual sales, targets, variances, and YTD performance, along with employee-wise insights.
 
----
 
 ## 🚀 Features
 
@@ -23,7 +22,6 @@ This project is a **Sales KPI Dashboard** built in **Power BI**, designed to mon
     - Variance %
     - Trendline (Sparkline)
 
----
 
 ## 🛠️ Data Sources & Preparation
 
@@ -42,7 +40,6 @@ The data model included the following tables:
 - **Dashboarding**: Designed visuals and formatted components for readability and insight.
 - **Slicer Setup**: Added a slicer to filter by team and view team-specific performance metrics.
 
----
 
 ## 📎 Tools Used
 
@@ -51,7 +48,6 @@ The data model included the following tables:
 - Power Query (M)  
 - Data Modeling
 
----
 
 ## 📌 Purpose
 
@@ -62,7 +58,6 @@ This dashboard project was built to:
 - Showcase an example of a business-focused reporting tool for performance analysis  
 - Enable team-level insights using interactive filtering
 
----
 
 ## 🧮 DAX Measures Used
 
