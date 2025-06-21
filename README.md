@@ -51,3 +51,40 @@ YTD Sales Target = CALCULATE([Total Sales Target], DATESYTD('Calendar'[Date]))
 YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
 
 YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
+
+## 🛠️ Data Sources & Preparation
+
+The data model included the following tables:
+
+- `Actual`
+- `Targets`
+- `dimPeople`
+- `Calendar`
+
+**Steps Taken**:
+
+- **Power Query**: Cleaned and formatted the data appropriately.
+- **Model View**: Created relationships between tables.
+- **DAX Modeling**: Created calculated measures for KPIs.
+- **Dashboarding**: Designed visuals and formatted components for readability and insight.
+- **Slicer Setup**: Added a slicer to filter by team and view team-specific performance metrics.
+
+---
+
+## 📎 Tools Used
+
+- Power BI  
+- DAX  
+- Power Query (M)  
+- Data Modeling
+
+---
+
+## 📌 Purpose
+
+This dashboard project was built to:
+
+- Practice KPI tracking and DAX calculations  
+- Demonstrate Power BI dashboarding and data modeling skills  
+- Showcase an example of a business-focused reporting tool for performance analysis  
+- Enable team-level insights using interactive filtering
