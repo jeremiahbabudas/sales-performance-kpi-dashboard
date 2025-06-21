@@ -25,33 +25,6 @@ This project is a **Sales KPI Dashboard** built in **Power BI**, designed to mon
 
 ---
 
-## 🧮 DAX Measures Used
-
-```DAX
-Target Status = IF([Variance] > 0, 1, -1)
-
-Total Sales Actual = SUM(Actual[Sales])
-
-Total Sales Target = SUM(Targets[Sales])
-
-Variance = [Total Sales Actual] - [Total Sales Target]
-
-Variance % = DIVIDE([Variance], [Total Sales Target])
-
-Variance Label = 
-    VAR up = "✅"
-    VAR down = "❌"
-    VAR formatted_var_pct = FORMAT(ABS([Variance %]), "0.0%")
-    RETURN formatted_var_pct & " " & IF([Variance %] > 0, up, down)
-
-YTD Sales Actual = CALCULATE([Total Sales Actual], DATESYTD('Calendar'[Date]))
-
-YTD Sales Target = CALCULATE([Total Sales Target], DATESYTD('Calendar'[Date]))
-
-YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
-
-YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
-
 ## 🛠️ Data Sources & Preparation
 
 The data model included the following tables:
@@ -88,3 +61,34 @@ This dashboard project was built to:
 - Demonstrate Power BI dashboarding and data modeling skills  
 - Showcase an example of a business-focused reporting tool for performance analysis  
 - Enable team-level insights using interactive filtering
+
+
+---
+
+## 🧮 DAX Measures Used
+
+```DAX
+Target Status = IF([Variance] > 0, 1, -1)
+
+Total Sales Actual = SUM(Actual[Sales])
+
+Total Sales Target = SUM(Targets[Sales])
+
+Variance = [Total Sales Actual] - [Total Sales Target]
+
+Variance % = DIVIDE([Variance], [Total Sales Target])
+
+Variance Label = 
+    VAR up = "✅"
+    VAR down = "❌"
+    VAR formatted_var_pct = FORMAT(ABS([Variance %]), "0.0%")
+    RETURN formatted_var_pct & " " & IF([Variance %] > 0, up, down)
+
+YTD Sales Actual = CALCULATE([Total Sales Actual], DATESYTD('Calendar'[Date]))
+
+YTD Sales Target = CALCULATE([Total Sales Target], DATESYTD('Calendar'[Date]))
+
+YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
+
+YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
+
