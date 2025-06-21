@@ -89,5 +89,5 @@ This dashboard project was built to:
 
 ## 📷 Screenshots
 
-![Dashboard Screenshot 1](Dashboard1.png)
-![Dashboard Screenshot 2](Dashboard2.png)
+![Dashboard Screenshot 1](Screenshots/Dashboard1.png)  
+![Dashboard Screenshot 2](Screenshots/Dashboard2.png)
