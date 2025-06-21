@@ -92,3 +92,5 @@ YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
 
 YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
 
+
+
