@@ -85,3 +85,9 @@ This dashboard project was built to:
 - YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
 
 - YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
+
+
+## 📷 Screenshots
+
+![Dashboard Screenshot 1](Dashboard1.png)
+![Dashboard Screenshot 2](Dashboard2.png)
