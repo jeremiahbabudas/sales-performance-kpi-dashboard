@@ -21,13 +21,14 @@ This project is a **Sales KPI Dashboard** built in **Power BI**, designed to mon
     - Target
     - Variance %
     - Trendline (Sparkline)
+  - **Team Slicer**: Allows filtering the dashboard by one of four sales teams to view team-specific performance
 
 ---
 
 ## 🧮 DAX Measures Used
 
 ```DAX
-Target Status = IF([Variance]>0, 1, -1)
+Target Status = IF([Variance] > 0, 1, -1)
 
 Total Sales Actual = SUM(Actual[Sales])
 
