@@ -66,27 +66,27 @@ This dashboard project was built to:
 
 ## 🧮 DAX Measures Used
 
-```DAX
-Target Status = IF([Variance] > 0, 1, -1)
 
-Total Sales Actual = SUM(Actual[Sales])
+- Target Status = IF([Variance] > 0, 1, -1)
 
-Total Sales Target = SUM(Targets[Sales])
+- Total Sales Actual = SUM(Actual[Sales])
 
-Variance = [Total Sales Actual] - [Total Sales Target]
+- Total Sales Target = SUM(Targets[Sales])
 
-Variance % = DIVIDE([Variance], [Total Sales Target])
+- Variance = [Total Sales Actual] - [Total Sales Target]
 
-Variance Label = 
-    VAR up = "✅"
-    VAR down = "❌"
-    VAR formatted_var_pct = FORMAT(ABS([Variance %]), "0.0%")
-    RETURN formatted_var_pct & " " & IF([Variance %] > 0, up, down)
+- Variance % = DIVIDE([Variance], [Total Sales Target])
 
-YTD Sales Actual = CALCULATE([Total Sales Actual], DATESYTD('Calendar'[Date]))
+- Variance Label = 
+     VAR up = "✅"
+     VAR down = "❌"
+     VAR formatted_var_pct = FORMAT(ABS([Variance %]), "0.0%")
+     RETURN formatted_var_pct & " " & IF([Variance %] > 0, up, down)
 
-YTD Sales Target = CALCULATE([Total Sales Target], DATESYTD('Calendar'[Date]))
+- YTD Sales Actual = CALCULATE([Total Sales Actual], DATESYTD('Calendar'[Date]))
 
-YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
+- YTD Sales Target = CALCULATE([Total Sales Target], DATESYTD('Calendar'[Date]))
 
-YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
+- YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
+
+- YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
