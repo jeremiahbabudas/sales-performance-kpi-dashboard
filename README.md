@@ -62,7 +62,6 @@ This dashboard project was built to:
 - Showcase an example of a business-focused reporting tool for performance analysis  
 - Enable team-level insights using interactive filtering
 
-
 ---
 
 ## 🧮 DAX Measures Used
@@ -91,6 +90,3 @@ YTD Sales Target = CALCULATE([Total Sales Target], DATESYTD('Calendar'[Date]))
 YTD Variance = [YTD Sales Target] - [YTD Sales Actual]
 
 YTD Variance % = DIVIDE([YTD Variance], [YTD Sales Target])
-
-
-
